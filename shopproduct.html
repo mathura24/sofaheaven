@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heaven</title>
+
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- top -->
+    <div class=" z-10 sticky top-0 shadow-2xl">
+        <div class="bg-pink-300 text-white flex items-center justify-center">
+            <marquee direction="left" scrollamount="15" class="">
+                <p class="font-bold h-12 text-2xl text-white ">EMI option is also available at checkout. Hurry and Grab
+                    your
+                    favourtite
+                    products!</p>
+            </marquee>
+        </div>
+
+        <!-- sofa icon -->
+        <div class="justify-between flex items-center bg-white">
+            <div class="flex items-center mt-3 ">
+                <img src="./images/sofa-heaven-white-background.png">
+                <div class="flex  gap-10 justify-center font-serif ">
+                    <a href="./shopproduct.html" class=" hover:text-green-600 hover:underline text-xl">Shop Products</a>
+
+                    <a href="./aboutus.html" class="hover:text-green-600 hover:underline text-xl ">About Us</a>
+                    <a href="./review.html" class="hover:text-green-600 hover:underline text-xl ">Reviews</a>
+                    <a href="./blog.html" class="hover:text-green-600 hover:underline text-xl">Blog</a>
+                </div>
+            </div>
+
+            <!-- icons -->
+            <div class="flex gap-5 mr-7">
+
+                <div class="search flex items-center gap-2">
+
+                    <i onclick="showSearch()"
+                        class="fa-solid fa-magnifying-glass p-2 rounded-full hover:bg-gray-200 cursor-pointer transition fa-solid fa-magnifying-glass"
+                        style="color: #000000;" onclick="togglePlaceholder()"></i>
+                    <div id="input-Box" class=" hidden ">
+                        <input type="text" placeholder="What are you looking for?" id="searchInput"
+                            class="bg-black text-gray-500 p-3 rounded ">
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#" onclick="openModel()">
+
+                        <i class="fa-solid fa-circle-user p-2 rounded-full hover:bg-gray-200 cursor-pointer transition"
+                            style="color: #000205;"></i>
+                    </a>
+                </div>
+
+                <div class="relative">
+                    <i onclick="showCartMsg()"
+                        class="fa-solid fa-cart-shopping p-2 rounded-full hover:bg-gray-200 cursor-pointer transition"
+                        style="color: #00040a;"></i>
+                    <div id="card-msg"
+                        class="absolute right-0 top-10  text-center text-white p-2 rounded font-medium hidden bg-black z-50 w-56">
+                        <p>CART</p>
+                        <p>Your cart is
+                            currently empty</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- video -->
+
+    <video class="w-full h-auto" autoplay muted playsinline loop>
+        <source src="./images/video 3.mp4" type="video/mp4" />
+
+    </video>
+
+
+    <!-- small images -->
+    <div class="flex justify-center gap-10 mt-10">
+        <div>
+            <img src="./images/shop1.jpg">
+            <p class="text-sm mt-1 font-serif">1 Seater Sofas</p>
+        </div>
+        <div>
+            <img src="./images/shop2.jpg">
+            <p class="text-sm mt-1 font-serif">2 Seater Sofas</p>
+
+        </div>
+        <div>
+            <img src="./images/shop3.jpg">
+            <p class="text-sm mt-1 font-serif">3 Seater Sofas</p>
+        </div>
+        <div>
+            <img src="./images/shop4.jpg">
+            <p class="text-sm mt-1 font-serif">Corner Sofas</p>
+        </div>
+        <div>
+            <img src="./images/shop5.jpg">
+            <p class="text-sm mt-1 font-serif">Sofa cum beds</p>
+        </div>
+        <div>
+            <img src="./images/shop6.jpg">
+            <p class="text-sm mt-1 font-serif">Sofa sets</p>
+        </div>
+    </div>
+
+    <div class="flex justify-center">
+        <hr class="w-3/4 bordert border-gray-500 my-4  pl-10 mt-10">
+    </div>
+
+    <!-- main images -->
+    <div id="product">
+
+
+        <div class="flex justify-center gap-10 ">
+
+            <div>
+                <img src="./images/shop-7.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110 ">
+                <p class="text-center mt-2 font-serif text-xl ">Leather Sofas</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 39,989</p>
+
+                    <Del class="pl-2  ">$ 64,199</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">39 % OFF</p>
+                </div>
+            </div>
+
+
+            <div>
+                <img src="./images/shop-8.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl ">Fabric Sofas</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 34,989</p>
+
+                    <Del class="pl-2  ">$ 57,799</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">36 % OFF</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/shop-9.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Sofa Sets</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/shop-10.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Ashbourne</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center gap-10 mt-10">
+            <div>
+                <img src="./images/shop-11.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Barthez</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/shop-12.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Belcourt</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/shop-13.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Bentham</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/shop-14.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Bupton</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center gap-10 mt-10">
+            <div>
+                <img src="./images/shop-15.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Callahan</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/shop-19.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif">Gatlin</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/shop-17.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Highland</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/shop-18.jpg" style="height: 250px; width: 250px;"
+                    class="rounded-2xl w-full block transform transition-transform duration-1000 hover:scale-110">
+                <p class="text-center mt-2 font-serif text-xl">Hazel</p>
+                <div class="flex justify-center">
+
+                    <p class="text-center font-serif  ">$ 66,989 </p>
+
+                    <Del class="pl-2  ">$ 99,999</Del>
+                    <p class="text-green-600 pl-2 font-serif  ">31 % OFF</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- fooder -->
+    <div class="bg-gray-200">
+        <div class="flex mt-5 gap-96  p-5">
+            <div class="pl-10">
+                <p class="font-bold">Products</p>
+                <div class="flex  text-sm">
+                    <div class="mt-3">
+                        <p>Home</p>
+                        <p>Search</p>
+                        <p>SofaBed</p>
+                        <p>FlipperX</p>
+                        <p>AboutUs</p>
+                    </div>
+                    <div class="mt-3 pl-20">
+                        <p>PrivacyPolicy</p>
+                        <p>PrivacyPolicy</p>
+                        <p>ShippingPolicy</p>
+                        <p>TermsofService</p>
+                        <p>ContactUs</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <p class="font-bold">Newsletter</p>
+                <p class=" text-sm mt-3 text-left">Subscribe for store updates and discounts. We only send emails about
+                    once
+                    month and only about good things.</p>
+                <div>
+                    <input type="text" class="mt-3 rounded-2xl outline-none p-5" placeholder="Email address"
+                        style="width: 400px; height: 50px;">
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <div class="flex justify-center">
+                <hr class="w-3/4 bordert border-gray-500 my-4  pl-10 mt-10">
+            </div>
+        </div>
+
+
+        <!-- icons -->
+        <div class="flex gap-2 pl-10">
+            <img class="p-2 h-12 w-15" src="./images/fb gif.gif">
+            <img class=" p-2 h-12 w-15" src="./images/insta i.gif">
+        </div>
+
+        <div class="mt-3 pl-10">
+            <p class="text-sm text-gray-800">©SUKH STEELS PRIVATE LIMITED. All Rights Reserved.</p>
+            <p class="text-sm text-gray-800">Powered by Shopify</p>
+        </div>
+
+        <div class="flex justify-end">
+            <img src="./images/whatsapp 1.gif" class=" bg-transparent">
+            <p class="  font-medium p-2 text-lg  ">whatsapp</p>
+
+        </div>
+
+    </div>
+
+    <!--   OTP FORM -->
+
+
+
+    <!-- OTP Modal Starts -->
+
+    <div id="otpModel" class="flex hidden fixed inset-0 bg-black bg-opacity-50  pl-20 item-center justify-center z-50">
+
+        <!-- Left Image -->
+        <div>
+            <img src="./images/OTP img.webp" style="height: 500px; width:900px;" class="m-20  pl-20 ">
+        </div>
+
+        <!-- OTP Form -->
+
+        <div class="">
+            <div class="bg-white m-5" style="height: 500px; width:400px; ">
+
+                <div class="m-20 ">
+                    <img src="./images/phone icon.webp" class="p-10">
+                </div>
+
+
+                <div class="text-center">
+                    <p class="font-medium text-xl">Login with OTP</p>
+                    <p class="mt-3">Enter your log in details</p>
+                </div>
+
+                <div class="mt-5 font-medium">
+                    <p class="pl-5">Phone</p>
+                    <div class="pl-5">
+
+
+
+                        <div class="mb-5 mt-4">
+                            <div class="pl-4 ">
+                                <input id="mobileNumber" type="text" placeholder="Enter 10 digit mobile number"
+                                    style="height:30px; width:250px ;" class="p-5 outline-none border"
+                                    oninput="checkMobileNumber()" />
+
+                                <!-- error msg -->
+
+                                <p id="errorMsg" class="text-red-500 text-sm mb-2 hidden">Please enter a valid
+                                    10-digit number.</p>
+
+                                <!-- Success message -->
+                                <p id="successMsg" class="text-green-600 text-sm mb-2 hidden">OTP Verified
+                                    Successfully ✅</p>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="flex justify-center h-15 ">
+                    <button id="otpBtn" onclick="validateAndSendOTP()" style="width: 300px;"
+                        class="bg-blue-800 mt-10 p-2 text-white font-bold py-2  mt-10 px-4 rounded w-full disabled:opacity-50"
+                        disabled>Request OTP</button>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Close Button> -->
+        <div class="">
+            <div class="pr-96">
+                <button onclick="closeModel()"
+                    class="hover hover:bg-white rounded p-2 text-3xl font-medium mt-10 flex ">X</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- OTP Modal Ends -->
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

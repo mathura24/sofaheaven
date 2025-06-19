@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heaven</title>
+
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- top -->
+    <div class=" z-10 sticky top-0 shadow-2xl top-0">
+        <div class="bg-pink-300 text-white flex items-center justify-center">
+            <marquee direction="left" scrollamount="15" class="">
+                <p class="font-bold h-12 text-2xl text-white ">EMI option is also available at checkout. Hurry and Grab
+                    your
+                    favourtite
+                    products!</p>
+            </marquee>
+        </div>
+
+        <!-- sofa icon -->
+        <div class="justify-between flex items-center bg-white">
+            <div class="flex items-center mt-3 ">
+                <img src="./images/sofa-heaven-white-background.png">
+                <div class="flex  gap-10 justify-center font-serif ">
+                    <a href="./shopproduct.html" class="hover:text-green-600 hover:underline text-xl ">Shop Products</a>
+
+                    <a href="./aboutus.html" class="hover:text-green-600 hover:underline text-xl ">About Us</a>
+                    <a href="./review.html" class="hover:text-green-600 hover:underline text-xl ">Reviews</a>
+                    <a href="./blog.html" class="hover:text-green-600 hover:underline text-xl ">Blog</a>
+                </div>
+            </div>
+
+            <!-- icons -->
+            <div class="flex gap-5 mr-7">
+                <div class="search flex items-center gap-2">
+
+
+                    <i onclick="showSearch()"
+                        class="fa-solid fa-magnifying-glass p-2 rounded-full hover:bg-gray-200 cursor-pointer transition fa-solid fa-magnifying-glass"
+                        style="color: #000000;"></i>
+                    <div id="input-Box" class=" hidden ">
+                        <input type="text" placeholder="What are you looking for?"
+                            class="bg-black text-gray-500 p-3 rounded ">
+                    </div>
+
+                    <div>
+                        <a href="#" onclick="openModel()">
+                            <i class="fa-solid fa-circle-user p-2 rounded-full hover:bg-gray-200 cursor-pointer transition"
+                                style="color: #000205;"></i>
+                        </a>
+                    </div>
+
+                    <div class="relative">
+                        <i onclick="showCartMsg()"
+                            class="fa-solid fa-cart-shopping p-2 rounded-full hover:bg-gray-200 cursor-pointer transition"
+                            style="color: #00040a;"></i>
+                        <div id="card-msg"
+                            class="absolute right-0 top-10  text-center text-white p-2 rounded font-medium hidden bg-black z-50 w-56">
+                            <p>CART</p>
+                            <p>Your cart is
+                                currently empty</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-center text-5xl mt-5">
+
+        <h3 class="font-bold">About us</h3>
+    </div>
+
+    <video class="w-full h-auto mt-10" autoplay muted playsinline loop>
+        <source src="./images/video 1.mp4" type="video/mp4" />
+        
+    </video>
+
+
+    <div class="text-center pl-96 mt-10 " style="width: 1000px;">
+        <p class="font-serif"> In India, offering a range of high-quality furniture
+            and home decor pieces for your living and office spaces at accessible price points. Each piece of furniture
+            in our collection is crafted in collaboration with sought-after designers in Italy and around the world, and
+            brings a uniquely modern design aesthetic to your home. From luxury sofas for your living room to study
+            tables and ergonomic chairs for your home office, from home office to fabric sofa sets, Sunday offers
+            elegant and fashionable solutions to modern home décor needs.</p>
+    </div>
+
+
+    <div class="flex mt-10">
+        <div class="mt-56 pl-20">
+            <p class="font-serif" style="width: 500px;">Each of our creations embodies a fresh design aesthetic that is
+                both functional and contemporary. With the
+                pandemic changing the narrative in furniture products, Sunday is offering a new interpretation of design
+                that has emerged from a flurry of creativity, iterative thinking, and pure inspiration. In a world full
+                of
+                compromises, Sunday Design makes none.
+            </p>
+
+            <div class="text-center mt-10">
+                <form action="https://sundaydesign.co.in/collections/all">
+                    <button class="bg-red-500 p-3 text-white font-bold text-2xl ">Shop now</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-8">
+            <img src="./images/ab 1.webp">
+        </div>
+    </div>
+
+    <div class="mt-20 flex">
+        <div>
+            <img src="./images/ab 2.webp">
+        </div>
+
+        <div class="mt-40 pl-10">
+            <p class="font-serif" style="width: 500px;"> we epitomize an interpretation of design that
+                is tasteful and modern, yet accessible.
+                Manufactured at one of the most advanced furniture factories in India, our creations express a unique
+                blend of traditional craftsmanship techniques and modern technology. Each piece is the product of
+                meticulously coordinated work between design and craftsmanship, created with careful attention to even
+                the smallest nuances of modern lifestyles.
+
+
+            </p>
+
+            <div class="text-center mt-10">
+                <form action="https://sundaydesign.co.in/collections/all">
+                    <button class="bg-red-500 p-3 text-white font-bold text-2xl ">Shop now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-20 pl-20 flex">
+        <div>
+            <p class="font-serif mt-40" style="width: 500px;">Sunday Design is more than just a brand; it is a lifestyle
+                choice, offering bold, daring and seductive
+                options in interior design. The clean lines, and the soulful and sleek visuals that grace every piece of
+                furniture in our collection are distinctive of the fresh and unique perspective we bring to home décor.
+                Our
+                high-quality design aesthetic bestows an air of effortless elegance on each creation with no compromise
+                on
+                durability or affordability. Whether it be our contemporary sofas, writing desks, dressing tables, or
+                storage drawers, you will find every piece perfect, exciting and chic additions to any interior design
+                plan.
+
+
+            </p>
+            <div class="text-center mt-10">
+                <form action="https://sundaydesign.co.in/collections/all">
+                    <button class="bg-red-500 p-3 text-white font-bold text-2xl ">Shop now</button>
+                </form>
+            </div>
+
+
+        </div>
+
+
+        <div>
+            <img src="./images/ab 3.webp">
+        </div>
+    </div>
+
+    <!-- fooder -->
+    <div class="bg-gray-200 mt-20">
+        <div class="flex mt-5 gap-96  p-5">
+            <div class="pl-10">
+                <p class="font-bold">Products</p>
+                <div class="flex  text-sm">
+                    <div class="mt-3">
+                        <p>Home</p>
+                        <p>Search</p>
+                        <p>SofaBed</p>
+                        <p>FlipperX</p>
+                        <p>AboutUs</p>
+                    </div>
+                    <div class="mt-3 pl-20">
+                        <p>PrivacyPolicy</p>
+                        <p>PrivacyPolicy</p>
+                        <p>ShippingPolicy</p>
+                        <p>TermsofService</p>
+                        <p>ContactUs</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <p class="font-bold">Newsletter</p>
+                <p class=" text-sm mt-3 text-left">Subscribe for store updates and discounts. We only send emails about
+                    once
+                    month and only about good things.</p>
+                <div>
+                    <input type="text" class="mt-3 rounded-2xl outline-none p-5" placeholder="Email address"
+                        style="width: 400px; height: 50px;">
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div>
+            <div class="flex justify-center">
+                <hr class="w-3/4 bordert border-gray-500 my-4  pl-10 mt-10">
+            </div>
+        </div>
+
+
+        <!-- icons -->
+        <div class="flex gap-2 pl-10">
+            <img class="p-2 h-12 w-15" src="./images/fb gif.gif">
+            <img class=" p-2 h-12 w-15" src="./images/insta i.gif">
+        </div>
+
+        <div class="mt-3 pl-10">
+            <p class="text-sm text-gray-800">©SUKH STEELS PRIVATE LIMITED. All Rights Reserved.</p>
+            <p class="text-sm text-gray-800">Powered by Shopify</p>
+        </div>
+
+        <div class="flex justify-end cursor-pointer" onclick="handleWhatsAppClick()">
+            <img src="./images/whatsapp 1.gif" class=" bg-transparent">
+            <p class="  font-medium p-2 text-lg  ">whatsapp</p>
+
+        </div>
+
+
+
+
+    </div>
+
+    <!--   OTP FORM -->
+
+
+
+    <!-- OTP Modal Starts -->
+
+    <div id="otpModel" class="flex hidden fixed inset-0 bg-black bg-opacity-50  pl-20 item-center justify-center z-50">
+
+        <!-- Left Image -->
+        <div>
+            <img src="./images/OTP img.webp" style="height: 500px; width:900px;" class="m-20  pl-20">
+        </div>
+
+        <!-- OTP Form -->
+
+        <div class="">
+            <div class="bg-white m-5 rounded" style="height: 500px; width:400px; ">
+
+                <div class="m-20 ">
+                    <img src="./images/phone icon.webp" class="p-10">
+                </div>
+
+
+                <div class="text-center">
+                    <p class="font-medium text-xl">Login with OTP</p>
+                    <p class="mt-3">Enter your log in details</p>
+                </div>
+
+                <div class="mt-5 font-medium">
+                    <p class="pl-5">Phone</p>
+                    <div class="pl-5">
+
+
+
+                        <div class="mb-5 mt-4">
+                            <div class="pl-4 ">
+                                <input id="mobileNumber" type="text" placeholder="Enter 10 digit mobile number"
+                                    style="height:30px; width:250px ;" class="p-5 outline-none border"
+                                    oninput="checkMobileNumber()" />
+
+                                <!-- error msg -->
+
+                                <p id="errorMsg" class="text-red-500 text-sm mb-2 hidden">Please enter a valid
+                                    10-digit number.</p>
+
+                                <!-- Success message -->
+                                <p id="successMsg" class="text-green-600 text-sm mb-2 hidden">OTP Verified
+                                    Successfully ✅</p>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="flex justify-center h-15 ">
+                    <button id="otpBtn" onclick="validateAndSendOTP()" style="width: 300px;"
+                        class="bg-blue-800 mt-10 p-2 text-white font-bold py-2  mt-10 px-4 rounded w-full disabled:opacity-50"
+                        disabled>Request OTP</button>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Close Button> -->
+        <div class="">
+            <div class="pr-96">
+                <button onclick="closeModel()"
+                    class="hover hover:bg-white rounded p-2 text-3xl font-medium mt-10 flex ">X</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- OTP Modal Ends -->
+
+    <script src="./index.js"></script>
+
+</body>
+
+
+
+
+
+</html>
