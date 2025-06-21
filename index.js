@@ -118,3 +118,35 @@ window.addEventListener('load', () => {
         image.classList.remove('zoomed');
     }, 2000);
 });
+
+
+// email
+document.getElementById('sendEmailBtn').addEventListener('click', () => {
+  const name = document.getElementById('nameInput').value.trim();
+  const email = document.getElementById('emailInput').value.trim();
+
+  if (!name || !email) {
+    alert('Please enter your name and email!');
+    return;
+  }
+
+  fetch('http://localhost:3000/sendmail', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ name, email })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.message === 'Email sent successfully!') {
+      alert('Email sent successfully!');
+    } else {
+      alert('Failed to send email. Please try again later.');
+    }
+  })
+  .catch(err => {
+    console.error('Error:', err);
+    alert('Error occurred. Please try again later.');
+  });
+});
